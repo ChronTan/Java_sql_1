@@ -12,10 +12,9 @@ public class Main {
 
         Statement st=connection.createStatement();
         ResultSet rs;
-        
 
 
-
+        st.executeQuery("DELETE FROM users WHERE role=4 ");
 
 //        try(PreparedStatement statement=connection.prepareStatement("SELECT * FROM users WHERE login = (?)")){
         try{
